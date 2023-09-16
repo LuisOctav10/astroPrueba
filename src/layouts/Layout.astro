@@ -1,8 +1,11 @@
 ---
+import "../styles/Layout.css";
+import Footer from '../components/Footer.astro'
 interface Props {
     title: string;
 }
-import "../styles/Layout.css";
+
+
 
 const {title} = Astro.props
 ---
@@ -17,6 +20,8 @@ const {title} = Astro.props
   <body>
     <main class="mx-auto container md:pt-10">
       <slot />
+      
     </main>
+    <Footer/>
   </body>
 </html>
